@@ -100,7 +100,7 @@ export function createPromiseSuspender() {
       };
     }, [loaderKey, consumerKey]);
 
-    return createSuspender({ consumerKey, loaderKey, loader });
+    return createSuspender({ consumerKey, loaderKey, loader }) as T;
   }
 
   return usePromise;
